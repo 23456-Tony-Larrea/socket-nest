@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(expressIp().getIpInfoMiddleware);
   // Escucha en todas las interfaces de red
-  await app.listen(3000, '192.168.56.1');
-  console.log(`Application is running on: http://192.168.56.1:3000`);
+  await app.listen(3000, '192.168.15.56');
+  console.log(`Application is running on: http://192.168.15.56:3000`);
 }
 bootstrap();
