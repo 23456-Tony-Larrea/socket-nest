@@ -8,5 +8,6 @@ async function bootstrap() {
   // Escucha en todas las interfaces de red
   await app.listen(3000, '192.168.100.10');
   console.log(`Application is running on: http://192.168.100.10:3000`);
+
 }
 bootstrap();
